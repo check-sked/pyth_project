@@ -551,6 +551,12 @@ def _fmt(x, digits=2):
     return f"{x:.{digits}f}"
 
 
+def _word(n: int) -> str:
+    words = {0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six",
+             7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve"}
+    return words.get(int(n), str(int(n)))
+
+
 def _counts(df: pd.DataFrame) -> dict:
     classified = df[df.class_60.notna()]
     return {
@@ -614,7 +620,7 @@ def build_report(paths, base, proxy, proxy_info, marks, blocks) -> str:
     a("- A horizon quote is the last usable minute ending at or up to 60 seconds after the target. It is kept only if that minute is at most 90 seconds old at +1 minute, and at most 5 minutes old at +15, +60, and the next 16:00 ET. A quieter book than that is NOT AVAILABLE at that horizon, not a carried-forward guess.")
     a("- Taker outcome side is present on every row of the tape, so the signed gap uses that side. It is not inferred from the book.")
     a(f"- Test 2 historical depth: NOT AVAILABLE: the repo has no order book at block time. `data/processed/orderbook_depth.csv` is a top-of-book-and-depth snapshot of {proxy_info['n_markets']} markets, timestamps {proxy_info['snapshot_min']} to {proxy_info['snapshot_max']}, depth capped at 100 levels by the script that built it. Candlesticks have the best bid and ask only.")
-    a("- Test 3 book weight: NOT AVAILABLE: candlesticks do not carry size at the bid or ask, and the historical book is not stored. Design (b) is a weighted median of block prices only. Design (c) uses the book only when no confirming block is in the median.")
+    a("- Test 3 book weight: NOT AVAILABLE: candlesticks do not carry size at the bid or ask, and the historical book is not stored. Design (b) is a weighted median of earlier block prices only. The print being scored is not included. Design (c) uses the book when no earlier print was inside the quote.")
     a(f"- Recency half-life is {HALFLIFE_MIN:.0f} minutes, Kalshi's reporting window. It is an assumption, not a fitted number.")
     a("")
     a("## 2. Tables")
@@ -690,7 +696,7 @@ def build_report(paths, base, proxy, proxy_info, marks, blocks) -> str:
     a("")
     a("Back-test markets are the July Fed decision (`KXFEDDECISION-26JUL-H25`), Texas governor (`GOVPARTYTX-26-R`), Brazil (`KXBRPRES-26-LULA`), and every block market in the Commodities category. Mean absolute error is in cents, unweighted across prints that have both a mark and a +60 mid.")
     a("")
-    a("Design (b) does not include the book, and it does not include the print being scored. Design (c) is the same median of earlier prints that were inside the book; it uses the book when no such print exists. It is not a blend of the book and the blocks. A size-weighted blend is NOT AVAILABLE.")
+    a("Design (b) does not include the book, and it does not include the print being scored. Design (c) is that median of earlier prints that were inside the book, and it uses the book when none exist. It is not a blend. A size-weighted blend of the book and the blocks is NOT AVAILABLE.")
     a("")
 
     def mae(df, col):
@@ -717,7 +723,10 @@ def build_report(paths, base, proxy, proxy_info, marks, blocks) -> str:
         ea, na = mae(sub, "err_a")
         eb, nb = mae(sub, "err_b")
         ec, nc = mae(sub, "err_c")
-        table_rows.append([f"{sub.series_title.iloc[0]} | {ticker}", na, _fmt(ea), nb, _fmt(eb), nc, _fmt(ec)])
+        if na == 0 and nb == 0 and nc == 0:
+            continue
+        label = f"{sub.series_title.iloc[0]} | {ticker}".replace("|", "\\|")
+        table_rows.append([label, na, _fmt(ea), nb, _fmt(eb), nc, _fmt(ec)])
     a(markdown_table(
         ["slice", "n (a)", "MAE book ¢", "n (b)", "MAE earlier-blocks median ¢", "n (c)", "MAE inside-prints or book ¢"],
         table_rows,
@@ -860,18 +869,27 @@ def sentences(paths, base, proxy, marks, meta) -> str:
     finite = {k: v for k, v in scored.items() if v is not None}
     if finite:
         winner = min(finite, key=finite.get)
-        second = sorted(finite.values())
-        margin = (second[1] - second[0]) if len(second) > 1 else None
-        win_txt = f"The closest point estimate on the pooled back-test is {winner} at {_fmt(finite[winner])}¢ MAE"
-        if margin is not None:
-            win_txt += f", {_fmt(margin)}¢ tighter than the next design"
-        win_txt += f". Book only is {_fmt(ea)}¢ (n={na}), the earlier-blocks median is {_fmt(eb)}¢ (n={nb}), and inside-prints-or-book is {_fmt(ec)}¢ (n={nc})."
+        short = (
+            f"The closest point estimate on the pooled back-test is {winner} at {_fmt(finite[winner])}¢ MAE. "
+            f"Book only is {_fmt(ea)}¢ (n={na}), the earlier-blocks median is {_fmt(eb)}¢ (n={nb}), and inside-prints-or-book is {_fmt(ec)}¢ (n={nc})."
+        )
+        paired = marks[pd.to_numeric(marks["err_b"], errors="coerce").notna()]
+        n_tx = int((paired.market_name == "Texas governor").sum()) if len(paired) else 0
+        book_paired = float(pd.to_numeric(paired.err_a).mean()) if len(paired) else None
+        blocks_paired = float(pd.to_numeric(paired.err_b).mean()) if len(paired) else None
+        s3 = (
+            f"The closest point estimate on the pooled back-test is {winner} at {_fmt(finite[winner])}¢ MAE. "
+            f"Book only is {_fmt(ea)}¢ (n={na}). "
+            f"The earlier-blocks median, which leaves out the print being scored, is {_fmt(eb)}¢ (n={nb}). "
+            f"Inside-prints-or-book is {_fmt(ec)}¢ (n={nc}). "
+            f"On the {nb} prints that have an earlier block, the book is {_fmt(book_paired)}¢ and the earlier-blocks median is {_fmt(blocks_paired)}¢. "
+            f"{_word(n_tx).capitalize()} of those {_word(nb)} are the Texas governor market."
+        )
     else:
-        win_txt = "NOT AVAILABLE: none of the three marks had a +60 mid to score."
-    s3 = win_txt
-    conf3 = f"The score uses {na} prints for the book, {nb} for the earlier-blocks median, and {nc} for inside-prints-or-book, across the Fed, Texas, Brazil, and commodity-hub blocks that had a +60 quote. Prints with no earlier block are missing from (b)."
+        short = s3 = "NOT AVAILABLE: none of the three marks had a +60 mid to score."
+    conf3 = ""
     wrong3 = (
-        "Design (b) ignores the book entirely, and design (c) uses the book only when no confirming print is in the window, because the book's size is not in the data. "
+        "Design (b) ignores the book, and design (c) uses the book when no earlier print was inside the quote. "
         "Sixty minutes is a short horizon, and several of these prints are the same event a minute apart, so the errors are not independent."
     )
 
@@ -887,7 +905,7 @@ def sentences(paths, base, proxy, marks, meta) -> str:
     bullets = [
         f"{mostly} Classified at +60: {c['reverted']} reverted, {c['partial']} partial, {c['persistent']} persistent, out of {c['n_class']}.",
         f"Median retained fraction at +60 is {_fmt(None if c['med_ret_60'] is None else c['med_ret_60']*100)}%. Median |book move| is {_fmt(block_move)}¢ after a block and {_fmt(base_med)}¢ at {meta['base_n']} random times.",
-        s3,
+        short,
         f"Against the 7 Nov curve, {n_cheap} comparable blocks were inside that curve's slippage and {n_dear} were outside it. This is not the cost of walking the book at the time of the trade.",
         "A mark that weights the book and the blocks together by size is NOT AVAILABLE: the historical book depth was not stored.",
     ]
@@ -898,7 +916,7 @@ def sentences(paths, base, proxy, marks, meta) -> str:
     text.append("")
     text.append("**Test 2.** " + s2 + " " + conf2 + " " + wrong2)
     text.append("")
-    text.append("**Test 3.** " + s3 + " " + conf3 + " " + wrong3)
+    text.append("**Test 3.** " + " ".join(p for p in (s3, conf3, wrong3) if p))
     text.append("")
     text.append("**Test 4.** The tape has "
                 f"{c['n']} blocks. Dollars paid at the taker's price are not the same object as contracts times the cheaper side; both are in the table. "

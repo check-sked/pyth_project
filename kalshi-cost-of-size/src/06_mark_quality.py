@@ -219,11 +219,21 @@ class _Tee:
         self.term.write(s)
 
     def flush(self):
-        self.file.flush()
+        if not self.file.closed:
+            self.file.flush()
         self.term.flush()
+
+    def close(self):
+        if not self.file.closed:
+            self.file.flush()
+            self.file.close()
 
 
 if __name__ == "__main__":
-    sys.stdout = _Tee(ROOT / "output" / "mark_quality.md")
-    main()
-    sys.stdout.file.close()
+    tee = _Tee(ROOT / "output" / "mark_quality.md")
+    sys.stdout = tee
+    try:
+        main()
+    finally:
+        sys.stdout = tee.term
+        tee.close()
