@@ -1,0 +1,5 @@
+trade_id,ticker,created_time,count_fp,yes_price_dollars,no_price_dollars,taker_outcome_side,taker_book_side,is_block_trade,source
+0721d4ba-6259-b7e0-8c27-d911c84cd977,KXCRYPTOSTRUCTURE-26JAN-27,2026-09-04T22:33:07.330204Z,50000.00,0.1500,0.8500,no,ask,True,historical
+0721df71-dee9-a2a5-6527-feebfbd7883c,KXCRYPTOSTRUCTURE-26JAN-27,2026-09-04T14:49:17.487696Z,50000.00,0.1600,0.8400,no,ask,True,historical
+0721df71-ab39-b3a2-5c7c-49ef37b0c787,KXCRYPTOSTRUCTURE-26JAN-27,2026-09-04T14:49:11.308329Z,50000.00,0.1500,0.8500,no,ask,True,historical
+d2c14040-09c7-5d53-4186-4654416826ce,KXCCAPRICEICE-26AUG48,2026-08-18T20:25:29.687778Z,50000.00,0.2000,0.8000,no,ask,True,historical

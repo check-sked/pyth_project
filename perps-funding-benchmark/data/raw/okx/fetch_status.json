@@ -1,0 +1,127 @@
+{
+ "BTC": {
+  "instId": "BTC-USDT-SWAP",
+  "rows": 284,
+  "interval_h_detected": 8.0,
+  "first": "2026-08-06T16:00:00+00:00",
+  "last": "2026-11-09T00:00:00+00:00"
+ },
+ "ETH": {
+  "instId": "ETH-USDT-SWAP",
+  "rows": 284,
+  "interval_h_detected": 8.0,
+  "first": "2026-08-06T16:00:00+00:00",
+  "last": "2026-11-09T00:00:00+00:00"
+ },
+ "SOL": {
+  "instId": "SOL-USDT-SWAP",
+  "rows": 284,
+  "interval_h_detected": 8.0,
+  "first": "2026-08-06T16:00:00+00:00",
+  "last": "2026-11-09T00:00:00+00:00"
+ },
+ "NVDA": {
+  "instId": "NVDA-USDT-SWAP",
+  "rows": 284,
+  "interval_h_detected": 8.0,
+  "first": "2026-08-06T16:00:00+00:00",
+  "last": "2026-11-09T00:00:00+00:00"
+ },
+ "TSLA": {
+  "instId": "TSLA-USDT-SWAP",
+  "rows": 284,
+  "interval_h_detected": 8.0,
+  "first": "2026-08-06T16:00:00+00:00",
+  "last": "2026-11-09T00:00:00+00:00"
+ },
+ "oi_snapshot": {
+  "BTC": {
+   "instId": "BTC-USDT-SWAP",
+   "oi_contracts": 3377419.9900000147,
+   "oi_coins": 33774.199900000145,
+   "oi_usd": 2537560338.506701,
+   "ts": "2026-11-09T00:55:46.026000+00:00"
+  },
+  "ETH": {
+   "instId": "ETH-USDT-SWAP",
+   "oi_contracts": 6654891.490000014,
+   "oi_coins": 665489.1490000014,
+   "oi_usd": 1426023458.260183,
+   "ts": "2026-11-09T00:55:49.232000+00:00"
+  },
+  "SOL": {
+   "instId": "SOL-USDT-SWAP",
+   "oi_contracts": 3410057.700000001,
+   "oi_coins": 3410057.700000001,
+   "oi_usd": 298039042.9800001,
+   "ts": "2026-11-09T00:55:52.401000+00:00"
+  },
+  "NVDA": {
+   "instId": "NVDA-USDT-SWAP",
+   "oi_contracts": 139696.32000000004,
+   "oi_coins": 139696.32000000004,
+   "oi_usd": 25403775.792000003,
+   "ts": "2026-11-09T00:55:55.598000+00:00"
+  },
+  "TSLA": {
+   "instId": "TSLA-USDT-SWAP",
+   "oi_contracts": 41330.30000000001,
+   "oi_coins": 41330.30000000001,
+   "oi_usd": 14783021.704000004,
+   "ts": "2026-11-09T00:55:58.851000+00:00"
+  }
+ },
+ "funding_params": {
+  "BTC": {
+   "fundingRate": "0.0000282765475935",
+   "fundingTime": "1794211200000",
+   "interestRate": "0.0001000000000000",
+   "maxFundingRate": "0.00375",
+   "minFundingRate": "-0.00375",
+   "nextFundingTime": "1794240000000",
+   "premium": "-0.0004296578300816",
+   "settFundingRate": "0.0000210027568242"
+  },
+  "ETH": {
+   "fundingRate": "-0.0000905372634898",
+   "fundingTime": "1794211200000",
+   "interestRate": "0.0001000000000000",
+   "maxFundingRate": "0.0075",
+   "minFundingRate": "-0.0075",
+   "nextFundingTime": "1794240000000",
+   "premium": "-0.0005224806635504",
+   "settFundingRate": "-0.0001092279055511"
+  },
+  "SOL": {
+   "fundingRate": "-0.0000260825304412",
+   "fundingTime": "1794211200000",
+   "interestRate": "0.0001000000000000",
+   "maxFundingRate": "0.0075",
+   "minFundingRate": "-0.0075",
+   "nextFundingTime": "1794240000000",
+   "premium": "-0.0003431316481757",
+   "settFundingRate": "-0.0000250024308063"
+  },
+  "NVDA": {
+   "fundingRate": "-0.0011508899013924",
+   "fundingTime": "1794211200000",
+   "interestRate": "0.0000000000000000",
+   "maxFundingRate": "0.01",
+   "minFundingRate": "-0.01",
+   "nextFundingTime": "1794240000000",
+   "premium": "0.0028208839580287",
+   "settFundingRate": "-0.0012967208194469"
+  },
+  "TSLA": {
+   "fundingRate": "0.0000000000000000",
+   "fundingTime": "1794211200000",
+   "interestRate": "0.0000000000000000",
+   "maxFundingRate": "0.01",
+   "minFundingRate": "-0.01",
+   "nextFundingTime": "1794240000000",
+   "premium": "0.0026889280563626",
+   "settFundingRate": "0.0000000000000000"
+  }
+ },
+ "fetched_at_utc": "2026-11-09T00:55:59.546104+00:00"
+}

@@ -1,0 +1,31 @@
+venue,asset,oi_usd,as_of,oi_source,oi_usd_30d_mean,weight
+binance,BTC,7271916276.07597,2026-11-07 23:00:00,data.binance.vision daily metrics sum_open_interest_value (last row),7636187960.107576,0.47493908969165166
+bybit,BTC,,,NOT AVAILABLE: api.bybit.com geo-blocked (HTTP 403),,
+gate,BTC,2175357130.89552,2026-11-09T00:56:02.394194+00:00,/contracts position_size x quanto_multiplier x mark_price,4466196031.337492,0.14207563677552001
+hyperliquid,BTC,3156378272.66268,2026-11-09T01:02:52.395377+00:00,metaAndAssetCtxs openInterest x markPx,,0.20614750866601703
+lighter,BTC,170048802.267009,2026-11-09T01:01:00.541558+00:00,orderBookDetails open_interest x last_trade_price,,0.011106126677716606
+okx,BTC,2537560338.506701,2026-11-09T00:55:46.026000+00:00,/public/open-interest oiUsd,2544743848.359649,0.16573163818909478
+binance,ETH,5273387543.782247,2026-11-07 23:55:00,data.binance.vision daily metrics sum_open_interest_value (last row),5515783811.375021,0.5532532972462079
+bybit,ETH,,,NOT AVAILABLE: api.bybit.com geo-blocked (HTTP 403),,
+gate,ETH,829615938.0176,2026-11-09T00:56:02.394194+00:00,/contracts position_size x quanto_multiplier x mark_price,1712802248.5090735,0.08703850216687123
+hyperliquid,ETH,1934007353.2391016,2026-11-09T01:02:52.395633+00:00,metaAndAssetCtxs openInterest x markPx,,0.20290485692438
+lighter,ETH,68562843.1848,2026-11-09T01:01:06.180569+00:00,orderBookDetails open_interest x last_trade_price,,0.007193216645966204
+okx,ETH,1426023458.260183,2026-11-09T00:55:49.232000+00:00,/public/open-interest oiUsd,1467750180.4820895,0.149610127016575
+binance,NVDA,73459374.2537616,2026-11-07 23:15:00,data.binance.vision daily metrics sum_open_interest_value (last row),104655898.53070131,0.2709029349659807
+bybit,NVDA,,,NOT AVAILABLE: api.bybit.com geo-blocked (HTTP 403),,
+gate,NVDA,32397442.8462,2026-11-09T00:56:02.394194+00:00,/contracts position_size x quanto_multiplier x mark_price,50857706.19868,0.11947504918991027
+hyperliquid,NVDA,132250957.95152022,2026-11-09T01:02:53.335376+00:00,metaAndAssetCtxs openInterest x markPx,,0.4877141008221254
+lighter,NVDA,7653374.936987999,2026-11-09T01:01:17.527405+00:00,orderBookDetails open_interest x last_trade_price,,0.02822405926931727
+okx,NVDA,25403775.792000003,2026-11-09T00:55:55.598000+00:00,/public/open-interest oiUsd,16443477.064830007,0.09368385575266631
+binance,SOL,836323389.2614,2026-11-07 23:10:00,data.binance.vision daily metrics sum_open_interest_value (last row),893999205.6835648,0.4291749888684615
+bybit,SOL,,,NOT AVAILABLE: api.bybit.com geo-blocked (HTTP 403),,
+gate,SOL,327550706.31,2026-11-09T00:56:02.394194+00:00,/contracts position_size x quanto_multiplier x mark_price,779108466.9479998,0.16808877108961562
+hyperliquid,SOL,473472947.4599998,2026-11-09T01:02:52.395657+00:00,metaAndAssetCtxs openInterest x markPx,,0.24297149830416895
+lighter,SOL,13290819.57064,2026-11-09T01:01:11.903024+00:00,orderBookDetails open_interest x last_trade_price,,0.0068204326394837814
+okx,SOL,298039042.9800001,2026-11-09T00:55:52.401000+00:00,/public/open-interest oiUsd,319591774.7930834,0.15294430909827014
+binance,TSLA,41804009.64150271,2026-11-07 23:55:00,data.binance.vision daily metrics sum_open_interest_value (last row),51136970.78024717,0.38819588743149963
+bybit,TSLA,,,NOT AVAILABLE: api.bybit.com geo-blocked (HTTP 403),,
+gate,TSLA,9287637.576,2026-11-09T00:56:02.394194+00:00,/contracts position_size x quanto_multiplier x mark_price,22397120.168240003,0.0862458587555684
+hyperliquid,TSLA,38191291.4511,2026-11-09T01:02:53.335295+00:00,metaAndAssetCtxs openInterest x markPx,,0.3546478532598931
+lighter,TSLA,3621964.7058909996,2026-11-09T01:01:23.577659+00:00,orderBookDetails open_interest x last_trade_price,,0.03363389816686458
+okx,TSLA,14783021.704000004,2026-11-09T00:55:58.851000+00:00,/public/open-interest oiUsd,14470642.314293336,0.13727650238617434

@@ -1,0 +1,118 @@
+{
+ "Bybit-BTC": {
+  "rows": 5870,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-30T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Bybit-ETH": {
+  "rows": 5870,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-30T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Bybit-SOL": {
+  "rows": 6230,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-30T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Binance-BTC": {
+  "rows": 21942,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-30T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Binance-ETH": {
+  "rows": 21942,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-30T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Binance-SOL": {
+  "rows": 5943,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-07-01T08:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Hyperliquid-BTC": {
+  "rows": 30071,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2023-05-12T00:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "Hyperliquid-ETH": {
+  "rows": 30071,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2023-05-12T00:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "Hyperliquid-SOL": {
+  "rows": 30061,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2023-05-12T00:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "Hyperliquid-NVDA": {
+  "rows": 8650,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2025-11-12T21:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "OKX-BTC": {
+  "rows": 1273,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2025-09-10T00:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "OKX-ETH": {
+  "rows": 1273,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2025-09-10T00:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "OKX-SOL": {
+  "rows": 690,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2026-03-23T08:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Gate-BTC": {
+  "rows": 6308,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-02-04T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Gate-ETH": {
+  "rows": 6308,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-02-04T16:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Gate-SOL": {
+  "rows": 6016,
+  "interval_h_mode_in_sample": 8.0,
+  "first": "2021-06-26T00:00:00+00:00",
+  "last": "2026-11-08T00:00:00+00:00"
+ },
+ "Lighter-BTC": {
+  "rows": 15839,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2025-01-17T08:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "Lighter-ETH": {
+  "rows": 15839,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2025-01-17T08:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "Lighter-SOL": {
+  "rows": 15839,
+  "interval_h_mode_in_sample": 1.0,
+  "first": "2025-01-17T08:00:00+00:00",
+  "last": "2026-11-08T06:00:00+00:00"
+ },
+ "markets_in_archive": 242,
+ "fetched_at_utc": "2026-11-09T00:55:27.009373+00:00"
+}

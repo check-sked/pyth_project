@@ -1,0 +1,4 @@
+trade_id,ticker,created_time,count_fp,yes_price_dollars,no_price_dollars,taker_outcome_side,taker_book_side,is_block_trade,source
+07235af6-c181-a203-aa98-8eb16526e817,KXMLB-26-HOU,2026-09-29T15:35:12.166249Z,13000000.00,0.0370,0.9630,yes,bid,True,live
+0723ba6b-86b1-b312-480e-5562f384b71b,KXCOWAGE-2027-T400,2026-09-25T13:17:58.662695Z,50000.00,0.2000,0.8000,yes,bid,True,live
+0723ba6b-15e1-b76a-e92f-f858692a1e95,KXCOWAGE-2027-T400,2026-09-25T13:17:48.942049Z,68000.00,0.2000,0.8000,yes,bid,True,live

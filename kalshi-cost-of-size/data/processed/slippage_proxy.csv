@@ -1,0 +1,53 @@
+trade_id,ticker,category,count_fp,gap_cents,side,bin,match,slippage_c,fill_frac,cheaper,note
+d518b440-72aa-5a03-8749-9fd004177095,KXBRENTMON-26JUN3017-T94.99,Commodities,250000.0,2.4999999999999964,sell,250000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+81c5083c-20e4-7ef0-ba86-41c81173dc21,KXBRENTMON-26JUN3017-T90.99,Commodities,250000.0,4.499999999999993,sell,250000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+ab0a8094-3060-4723-0b53-e5ecd2a8cb72,KXMVESPORTSMULTIGAMEEXTENDED-S202637D6E1B4F28-CC2208F8F90,Exotics,7812500.0,,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+3ff8d095-8b9e-5e09-2d7d-d18b3d746726,KXMVESPORTSMULTIGAMEEXTENDED-S202637D6E1B4F28-CC2208F8F90,Exotics,7812500.0,,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+6655e27d-3f82-7328-457f-16cce81b790f,KXNCAAFPLAYOFF-26-SCAR,Sports,40000.0,,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+e3109fba-38c9-404f-4492-9a0a830ce2f0,KXNCAAFPLAYOFF-26-SCAR,Sports,40000.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+78e7d480-04f8-72a3-f1e3-89df93f20431,KXNCAAFPLAYOFF-26-SCAR,Sports,50000.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+2f9d09d7-b05d-62e5-76b0-ebd6dc48bf31,KXNCAAFWINS-26SCAR-8,Sports,100000.0,,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+6b3e5f9c-cdf2-59bb-9f0a-d9c39b9378e5,KXHOBBYTEMP-26SEP01,Climate and Weather,25000.0,,buy,25000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+af33fd14-7f9f-4607-4b62-35f4b5f24ebc,KXFLYCANCJFK-JFK-ALL-26OCT21-T50,Economics,3000000.0,,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+420321f3-5609-76f5-d37a-377d635a1764,KXFEDDECISION-26JUL-H25,Economics,400000.0,6.5,sell,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+7011c30e-c63d-403c-73b1-9ff5d8b7a8b5,KXFEDDECISION-26JUL-H25,Economics,200000.0,6.5,sell,250000.0,category_median,50.00178824,1.0,True,"category median of 1 books that fully fill a 250,000-contract sell"
+2f7bf7b5-6f2b-6588-8071-cdaee6046e55,KXCAGOAT-26SEP30,Politics,500000.0,,sell,1000000.0,category_median,45.25431772799999,1.0,False,"category median of 1 books that fully fill a 1,000,000-contract sell"
+364a8229-45a6-77dc-11cb-077e8efcd3dc,KXNCAAFPLAYOFF-26-LSU,Sports,837500.0,,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+5e35f86d-a958-5b61-17f3-21ebf9fa35c8,KXNCAAFSF-27-LSU,Sports,470000.0,,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+678233e3-7880-4c8f-df86-0ffc4fe6261e,KXNCAAFFINALIST-27-LSU,Sports,537500.0,3.0000000000000027,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+2da1fca8-1179-7265-5472-4a57fbe3b0d2,KXNCAAF-27-LSU,Sports,787500.0,2.5,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0b7a059b-b999-4ac0-b949-a018d03c3228,KXNCAAFQF-27-LSU,Sports,367500.0,,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+d2c14040-09c7-5d53-4186-4654416826ce,KXCCAPRICEICE-26AUG48,Financials,50000.0,7.500000000000001,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0721df71-ab39-b3a2-5c7c-49ef37b0c787,KXCRYPTOSTRUCTURE-26JAN-27,Politics,50000.0,3.5000000000000004,sell,100000.0,category_median,15.130996819999998,1.0,True,"category median of 5 books that fully fill a 100,000-contract sell"
+0721df71-dee9-a2a5-6527-feebfbd7883c,KXCRYPTOSTRUCTURE-26JAN-27,Politics,50000.0,2.4999999999999996,sell,100000.0,category_median,15.130996819999998,1.0,True,"category median of 5 books that fully fill a 100,000-contract sell"
+0721d4ba-6259-b7e0-8c27-d911c84cd977,KXCRYPTOSTRUCTURE-26JAN-27,Politics,50000.0,0.5000000000000004,sell,100000.0,category_median,15.130996819999998,1.0,True,"category median of 5 books that fully fill a 100,000-contract sell"
+0722edf0-2a61-a838-fd30-cb2aa515db9e,KXMVECROSSCATEGORY0-SHARD1-S2026F0826A3010D-A1EC8CC56FB,Exotics,2803738.0,13.8,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+0722edf3-abb9-8483-f915-878a545f30aa,KXMVECROSSCATEGORY0-SHARD1-S2026F0826A3010D-A1EC8CC56FB,Exotics,934579.0,12.8,buy,1000000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0723ba6b-15e1-b76a-e92f-f858692a1e95,KXCOWAGE-2027-T400,Economics,68000.0,,buy,100000.0,category_median,0.5000000000000004,1.0,False,"category median of 1 books that fully fill a 100,000-contract buy"
+0723ba6b-86b1-b312-480e-5562f384b71b,KXCOWAGE-2027-T400,Economics,50000.0,,buy,100000.0,category_median,0.5000000000000004,1.0,False,"category median of 1 books that fully fill a 100,000-contract buy"
+07235af6-c181-a203-aa98-8eb16526e817,KXMLB-26-HOU,Sports,13000000.0,0.050000000000000044,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+0724457d-60c1-93a6-188c-869d01d057e7,KXAPTROT-26DEC1708-T1750,Commodities,83500.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0724457d-ebf1-9db4-3ba8-f2bc594c8c3c,KXAPTROT-26DEC1708-T2000,Commodities,83500.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0724457c-4949-b64f-17ce-83bf718b0ef7,KXAPTROT-26DEC1708-T2250,Commodities,83500.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0724cc9b-ecb1-9888-aaf4-162cc0953ed1,KXBRPRES-26-LULA,Elections,250000.0,2.500000000000002,buy,250000.0,category_median,2.384954679999995,1.0,False,"category median of 13 books that fully fill a 250,000-contract buy"
+0724cfd7-c179-b0cf-5f41-d4f19f8ca550,KXBRPRES-26-LULA,Elections,250000.0,2.500000000000002,buy,250000.0,category_median,2.384954679999995,1.0,False,"category median of 13 books that fully fill a 250,000-contract buy"
+0724cf75-4981-9ad9-152e-3da959fe0c95,KXBRPRES-26-LULA,Elections,250000.0,1.5000000000000013,buy,250000.0,category_median,2.384954679999995,1.0,True,"category median of 13 books that fully fill a 250,000-contract buy"
+07249a7e-b0a1-87a2-c0fb-bbce21009665,GOVPARTYTX-26-R,Elections,714000.0,2.499999999999991,buy,1000000.0,category_median,30.650839489999974,1.0,True,"category median of 11 books that fully fill a 1,000,000-contract buy"
+07249a5a-f9b1-acaa-24a9-f0f1b473369c,CONTROLS-2026-R,Elections,270270.0,0.5000000000000004,buy,1000000.0,category_median,30.650839489999974,1.0,True,"category median of 11 books that fully fill a 1,000,000-contract buy"
+07279920-8ff9-a2e4-6795-16b50d956044,GOVPARTYTX-26-R,Elections,781250.0,0.5000000000000004,buy,1000000.0,category_median,30.650839489999974,1.0,True,"category median of 11 books that fully fill a 1,000,000-contract buy"
+07272938-dc49-a531-b2db-8188c01e410a,KXNCAAFWINS-26SCAR-8,Sports,94728.0,7.249999999999996,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+072734bc-0701-93fb-812e-2ab1eda6291e,GOVPARTYTX-26-R,Elections,3571428.57,3.500000000000003,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+072734b9-3101-8e51-1aa8-ff248aac6d38,GOVPARTYTX-26-R,Elections,1785714.28,4.499999999999998,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+072734b9-7259-bbd6-ff53-c6dcd5834761,GOVPARTYTX-26-R,Elections,1785714.29,0.5000000000000004,buy,,,,,,"NOT AVAILABLE: block is larger than 1,000,000, the top of the 7 Nov curve"
+07273490-2249-98fc-252f-33f341d8edb9,GOVPARTYTX-26-R,Elections,714285.71,0.5000000000000004,buy,1000000.0,category_median,30.650839489999974,1.0,True,"category median of 11 books that fully fill a 1,000,000-contract buy"
+07273490-0b59-98fd-17b5-5ab632d56f8a,GOVPARTYTX-26-R,Elections,214285.71,4.499999999999998,buy,250000.0,category_median,2.384954679999995,1.0,False,"category median of 13 books that fully fill a 250,000-contract buy"
+0727084d-1801-94c2-1158-5f64cfcb683b,KXMARMADROUND-27R76-CIN,Sports,125000.0,,buy,250000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0727088a-94f1-a83b-df68-1eac8410de33,KXMARMADROUND-27R76-CIN,Sports,125000.0,2.0000000000000018,buy,250000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+0727092c-c7e1-b84a-1494-1a094726417f,KXOCCPPI-14APR27-T80,Financials,25000.0,,sell,25000.0,category_median,34.15373680000001,1.0,False,"category median of 1 books that fully fill a 25,000-contract sell"
+07271df4-cae9-816c-0948-1350106080ec,KXBUNDESLIGATOP-27TOP4-VFB,Sports,50000.0,,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07271df7-b229-8a7a-7be1-e539a85573cf,KXBUNDESLIGATOP-27TOP4-VFB,Sports,50000.0,3.500000000000003,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07271dc2-5619-8385-fb49-c6cde9c2c3b5,KXGOLFMAJOR-27-MPEN,Sports,150000.0,,buy,250000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07271e8f-2af9-8b59-bfd4-1ee433b7f34e,KXMARMADROUND-27F4-CREI,Sports,50000.0,,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07271ecf-e759-9922-29ed-8cc8c4bd6d1e,KXSERIEATOP-27TOP4-JUV,Sports,50000.0,,sell,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07271ecf-9d89-be3a-71ba-2ffadebf4513,KXSERIEATOP-27TOP4-JUV,Sports,50000.0,,buy,100000.0,none,,,,NOT AVAILABLE: ticker is not in the 7 Nov snapshot and no same-category book fully fills this size
+07277928-de89-83ec-95b1-6988002d7299,KXSONORACATTLE-31MAR27-T90,Economics,100000.0,,buy,100000.0,same_ticker,70.9594243822018,0.0171051,,snapshot book does not fully fill this size bin

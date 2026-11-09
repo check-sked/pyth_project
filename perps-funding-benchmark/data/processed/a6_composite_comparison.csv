@@ -1,0 +1,13 @@
+asset,composite,max_venue_weight_all_present_pct,max_venue_weight_any_hour_pct,std_hourly_pp_common_hours,n_hours_common,std_hourly_pp_own_hours,outliers_per_1000_hours,eth_swap_hyperliquid_median_usd,eth_swap_hyperliquid_p95_usd,eth_swap_hyperliquid_n_windows,eth_swap_binance_median_usd,eth_swap_binance_p95_usd,eth_swap_binance_n_windows,spike_value_pct,spike_hour,spike_lighter_pct,chosen
+BTC,comp_oi,47.5,47.5,4.33,8753,4.33,2.82,,,,,,,,,,False
+BTC,comp_oi_cap30,30.0,30.0,4.34,8753,4.34,3.05,,,,,,,,,,True
+BTC,comp_oi_cap20,20.0,25.0,4.34,8753,4.34,3.99,,,,,,,,,,False
+BTC,comp_median,n/a,n/a,4.3,8753,4.31,1.41,,,,,,,,,,False
+ETH,comp_oi,55.3,55.3,4.95,8753,4.95,7.04,2605.0,4184.0,336.0,610.0,1606.0,335.0,,,,False
+ETH,comp_oi_cap30,30.0,30.0,4.79,8753,4.79,8.22,2284.0,3939.0,336.0,891.0,2476.0,335.0,,,,True
+ETH,comp_oi_cap20,20.0,25.0,4.68,8753,4.68,6.57,2338.0,3640.0,336.0,1009.0,2379.0,335.0,,,,False
+ETH,comp_median,n/a,n/a,4.67,8753,4.66,5.05,2376.0,3997.0,336.0,634.0,2602.0,335.0,,,,False
+SOL,comp_oi,42.9,50.7,7.57,5344,9.34,7.04,,,,,,,11.7,2026-08-25T01:00:00+00:00,267.2,False
+SOL,comp_oi_cap30,30.0,30.0,7.48,5344,9.22,7.16,,,,,,,11.9,2026-08-25T01:00:00+00:00,267.2,True
+SOL,comp_oi_cap20,20.0,25.0,7.37,5344,9.41,7.28,,,,,,,61.0,2026-08-25T01:00:00+00:00,267.2,False
+SOL,comp_median,n/a,n/a,7.41,5344,8.98,4.46,,,,,,,10.9,2026-08-25T01:00:00+00:00,267.2,False

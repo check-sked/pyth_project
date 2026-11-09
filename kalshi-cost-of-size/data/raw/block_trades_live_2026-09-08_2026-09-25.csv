@@ -1,0 +1,3 @@
+trade_id,ticker,created_time,count_fp,yes_price_dollars,no_price_dollars,taker_outcome_side,taker_book_side,is_block_trade,source
+0722edf3-abb9-8483-f915-878a545f30aa,KXMVECROSSCATEGORY0-SHARD1-S2026F0826A3010D-A1EC8CC56FB,2026-09-13T20:11:35.99422Z,934579.00,0.2600,0.7400,yes,bid,True,live
+0722edf0-2a61-a838-fd30-cb2aa515db9e,KXMVECROSSCATEGORY0-SHARD1-S2026F0826A3010D-A1EC8CC56FB,2026-09-13T20:11:24.417547Z,2803738.00,0.2700,0.7300,yes,bid,True,live

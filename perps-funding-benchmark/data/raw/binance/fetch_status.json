@@ -1,0 +1,147 @@
+{
+ "rest_api": "GEO-BLOCKED: HTTP 451 from https://fapi.binance.com/fapi/v1/fundingRate: {\n  \"code\": 0,\n  \"msg\": \"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received t",
+ "BTC": {
+  "symbol": "BTCUSDT",
+  "rows": 1095,
+  "archive_months_available": "2020-01..2026-10",
+  "months_used": [
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "first": "2025-11-01T00:00:00+00:00",
+  "last": "2026-10-31T16:00:00+00:00",
+  "interval_hours_seen": [
+   8.0
+  ]
+ },
+ "ETH": {
+  "symbol": "ETHUSDT",
+  "rows": 1095,
+  "archive_months_available": "2020-01..2026-10",
+  "months_used": [
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "first": "2025-11-01T00:00:00+00:00",
+  "last": "2026-10-31T16:00:00+00:00",
+  "interval_hours_seen": [
+   8.0
+  ]
+ },
+ "SOL": {
+  "symbol": "SOLUSDT",
+  "rows": 1095,
+  "archive_months_available": "2020-09..2026-10",
+  "months_used": [
+   "2025-11",
+   "2025-12",
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "first": "2025-11-01T00:00:00+00:00",
+  "last": "2026-10-31T16:00:00+00:00",
+  "interval_hours_seen": [
+   8.0
+  ]
+ },
+ "NVDA": {
+  "symbol": "NVDAUSDT",
+  "rows": 676,
+  "archive_months_available": "2026-03..2026-10",
+  "months_used": [
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "first": "2026-03-25T08:00:00+00:00",
+  "last": "2026-10-31T16:00:00+00:00",
+  "interval_hours_seen": [
+   1.0,
+   8.0
+  ]
+ },
+ "TSLA": {
+  "symbol": "TSLAUSDT",
+  "rows": 841,
+  "archive_months_available": "2026-01..2026-10",
+  "months_used": [
+   "2026-01",
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10"
+  ],
+  "first": "2026-01-27T16:00:00+00:00",
+  "last": "2026-10-31T16:00:00+00:00",
+  "interval_hours_seen": [
+   4.0,
+   8.0
+  ]
+ },
+ "oi_daily": {
+  "BTC": {
+   "days": 34,
+   "first": "2026-10-05",
+   "last": "2026-11-07"
+  },
+  "ETH": {
+   "days": 34,
+   "first": "2026-10-05",
+   "last": "2026-11-07"
+  },
+  "NVDA": {
+   "days": 34,
+   "first": "2026-10-05",
+   "last": "2026-11-07"
+  },
+  "SOL": {
+   "days": 34,
+   "first": "2026-10-05",
+   "last": "2026-11-07"
+  },
+  "TSLA": {
+   "days": 34,
+   "first": "2026-10-05",
+   "last": "2026-11-07"
+  }
+ },
+ "fetched_at_utc": "2026-11-09T01:00:34.296185+00:00"
+}

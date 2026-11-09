@@ -1,0 +1,24 @@
+{
+ "hosts": {
+  "https://api.bybit.com": "GEO-BLOCKED: HTTP 403 from https://api.bybit.com/v5/market/funding/history: {\n    error:The Amazon CloudFront distribution is configured to block access from your country\n}",
+  "https://api.bytick.com": "GEO-BLOCKED: HTTP 403 from https://api.bytick.com/v5/market/funding/history: {\n    error:The Amazon CloudFront distribution is configured to block access from your country\n}"
+ },
+ "public_archive_root": {
+  "http": 200,
+  "dirs": [
+   "kline_for_metatrader4/",
+   "premium_index/",
+   "spot_index/",
+   "trading/",
+   "spot/"
+  ]
+ },
+ "result": "Bybit API geo-blocked; funding taken from Pendle's Boros historical-data archive (second-hand)",
+ "fetched_at_utc": "2026-11-09T00:55:23.063614+00:00",
+ "fallback_source": "https://historical-data.boros.finance/funding-rate/Bybit-<ASSET>.ndjson.zip (Pendle-collected)",
+ "fallback_rows": {
+  "BTC": 1120,
+  "ETH": 1120,
+  "SOL": 1120
+ }
+}

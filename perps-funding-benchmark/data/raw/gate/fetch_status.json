@@ -1,0 +1,53 @@
+{
+ "BTC": {
+  "contract": "BTC_USDT",
+  "rows": 537,
+  "interval_h": 8.0,
+  "funding_cap_ratio": "0.75",
+  "create_time": "2019-11-18T00:00:00+00:00",
+  "first": "2026-05-14T08:00:01+00:00",
+  "last": "2026-11-09T00:00:00+00:00",
+  "oi_usd_now": 2175357130.89552
+ },
+ "ETH": {
+  "contract": "ETH_USDT",
+  "rows": 537,
+  "interval_h": 8.0,
+  "funding_cap_ratio": "0.75",
+  "create_time": "2019-11-20T00:00:00+00:00",
+  "first": "2026-05-14T08:00:01+00:00",
+  "last": "2026-11-09T00:00:00+00:00",
+  "oi_usd_now": 829615938.0176
+ },
+ "SOL": {
+  "contract": "SOL_USDT",
+  "rows": 537,
+  "interval_h": 8.0,
+  "funding_cap_ratio": "1.5",
+  "create_time": "2020-11-09T00:00:00+00:00",
+  "first": "2026-05-14T08:00:03+00:00",
+  "last": "2026-11-09T00:00:00+00:00",
+  "oi_usd_now": 327550706.31
+ },
+ "NVDA": {
+  "contract": "NVDA_USDT",
+  "rows": 203,
+  "interval_h": 8.0,
+  "funding_cap_ratio": "0.75",
+  "create_time": "2026-09-02T11:26:55+00:00",
+  "first": "2026-09-02T16:00:01+00:00",
+  "last": "2026-11-09T00:00:00+00:00",
+  "oi_usd_now": 32397442.8462
+ },
+ "TSLA": {
+  "contract": "TSLA_USDT",
+  "rows": 203,
+  "interval_h": 8.0,
+  "funding_cap_ratio": "0.75",
+  "create_time": "2026-09-02T11:23:48+00:00",
+  "first": "2026-09-02T16:00:01+00:00",
+  "last": "2026-11-09T00:00:00+00:00",
+  "oi_usd_now": 9287637.576
+ },
+ "fetched_at_utc": "2026-11-09T00:56:02.394194+00:00"
+}
