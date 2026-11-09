@@ -25,6 +25,7 @@ python src/07_block_diagnostics.py      # reversion, baseline, mark scores -> da
 Steps 01, 02, 04, 05, and 05b pull from the API and reflect the moment they ran. The raw pulls
 used here are committed under `data/raw/`, so steps 03 and later reproduce the same tables. Step 07
 pulls 1-minute candlesticks around each block and caches them in `data/cache/` (not committed).
+The committed block files are the date-range splits from parallel runs of step 01, and `src/07_block_diagnostics.py` reads every `block_trades*.csv`.
 
 ## Scripts
 
