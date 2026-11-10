@@ -36,7 +36,7 @@ endobj
 endobj
 4 0 obj
 <<
-/Length 8285
+/Length 8277
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -239,7 +239,7 @@ q
 1 0 0 1 42 490.8 cm
 q
 BT 1 0 0 1 0 22.9 Tm /F1 10 Tf 12 TL .101961 .101961 .101961 rg (\177) Tj ET
-BT 1 0 0 1 9 22.9 Tm .5 0 Td 10.4 TL /F2 8.3 Tf .101961 .101961 .101961 rg (Hedgers sizing a trade.) Tj /F1 8.3 Tf ( The 29 blocks are hedges on elections \(11\), the economy and the Fed \(6\), and commodities \(5\). Today they learn) Tj T* -0.5 0 Td (the cost at the print: on July 28, 600k Fed contracts went at 27\242 against a 20/22 screen. The curve tells them first: at 250k, 29% of books fill) Tj T* (both sides, and where they do, averaging the two sides, a median 8.2\242.) Tj T* ET
+BT 1 0 0 1 9 22.9 Tm .5 0 Td 10.4 TL /F2 8.3 Tf .101961 .101961 .101961 rg (Hedgers sizing a trade.) Tj /F1 8.3 Tf ( Today they find out the cost when they trade: on July 28, 600k Fed contracts went at 27\242 against a 20/22 screen.) Tj T* -0.5 0 Td (The curve shows it beforehand, from the live book. On November 7\222s books, 250k filled on both sides in only 29% of markets, and where it) Tj T* (did, the cost averaged a median 8.2\242 per contract across the two sides.) Tj T* ET
 Q
 Q
 q
@@ -507,20 +507,20 @@ xref
 0000000083 00000 n 
 0000000149 00000 n 
 0000000476 00000 n 
-0000008813 00000 n 
-0000008854 00000 n 
-0000008961 00000 n 
-0000009073 00000 n 
-0000130908 00000 n 
-0000131427 00000 n 
-0000180109 00000 n 
-0000180574 00000 n 
-0000180866 00000 n 
-0000181135 00000 n 
-0000181390 00000 n 
-0000185754 00000 n 
-0000379892 00000 n 
-0000380434 00000 n 
+0000008805 00000 n 
+0000008846 00000 n 
+0000008953 00000 n 
+0000009065 00000 n 
+0000130900 00000 n 
+0000131419 00000 n 
+0000180101 00000 n 
+0000180566 00000 n 
+0000180858 00000 n 
+0000181127 00000 n 
+0000181382 00000 n 
+0000185746 00000 n 
+0000379884 00000 n 
+0000380426 00000 n 
 trailer
 <<
 /Size 19
@@ -529,5 +529,5 @@ trailer
 /ID [ <5c6043f8a3188378e20bcfe89f03a988> <5c6043f8a3188378e20bcfe89f03a988> ]
 >>
 startxref
-380781
+380773
 %%EOF
